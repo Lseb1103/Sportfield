@@ -1,17 +1,19 @@
 import React from 'react';
 import cancha2 from '../images/cancha2.PNG';
 import futbol2 from '../images/futbol2.PNG';
-import {Button, Card, Col, Row} from 'antd';
+import {Card, Col, Row} from 'antd';
+import {useHistory } from "react-router-dom";
 import '../styles/services.css';
 import {GreenButton} from "./GreenButton";
 
 
 const { Meta } = Card;
 
-const Services = () => {
-    const handleLogout = async () => {
 
-        history.push("/registrarse");
+const Services = () => {
+    const history = useHistory();
+    const handleLogout =  () => {
+        history.push("/inicio-sesion");
     };
     return (
         <>
@@ -25,9 +27,7 @@ const Services = () => {
 
                         title="Alquiler de Canchas Deportivas" description="Reserva tu cancha en la fecha y hora que deseas" />
                         <div className="btnServices">
-                            {/*<GreenButton type="link" href={`/registrarse`} button_name="Agendar turno" button_func={GreenButton}></GreenButton>*/}
-                            <Button type="link" href={`/registrarse`}>Primary Button</Button>
-                            <GreenButton onClick={handleLogout} button_name="Inscribirse" button_func={GreenButton}></GreenButton>
+                            <GreenButton  button_name="Agendar cancha" button_func={handleLogout}/>
                         </div>
 
                 </Card></Col>

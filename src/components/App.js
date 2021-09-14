@@ -9,6 +9,8 @@ import AboutFigma from "./AboutFigma";
 import Log from "./Log";
 import Register from "./Register";
 import HomePage from "./HomePage";
+import {ProfilePage} from "../pages/ProfilePage";
+import {TurnsPage} from "../pages/TurnsPage";
 
 
 const { Header, Footer, Content } = Layout;
@@ -34,6 +36,12 @@ function App() {
                 </Route>
                 <Route path="/registrarse">
                     <Register />
+                </Route>
+                <Route path="/perfil">
+                    <ProfilePage />
+                </Route>
+                <Route path="/agendar-canchas">
+                    <TurnsPage />
                 </Route>
 
                 <Route path="/">

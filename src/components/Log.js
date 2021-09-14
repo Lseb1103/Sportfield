@@ -2,6 +2,7 @@ import React  from "react";
 import "../styles/App.css";
 import { Button, Form,  Input } from "antd";
 import "../styles/login.css";
+import {useHistory } from "react-router-dom";
 
 /*import "../styles/GreenButton.css";*/
 const onFinish = (values) => {
@@ -13,6 +14,13 @@ const onFinishFailed = (errorInfo) => {
 };
 
 function Log() {
+  const history = useHistory();
+  const handleProfile =  () => {
+    history.push("/perfil");
+  };
+  const handleLogout =  () => {
+    history.push("/registrarse");
+  };
   return (
     <div>
       <div className="MainContainer">
@@ -65,12 +73,13 @@ function Log() {
               span: 16,
             }}
           >
-            <Button type="primary" htmlType="submit">
+            <Button onClick={handleProfile} type="primary" htmlType="submit">
               Aceptar
             </Button>
           </Form.Item>
           <div>¿No tienes cuenta? Regístrate </div>
-          <div> Aquí</div>
+          <div>
+            <a onClick={handleLogout}>Aquí</a></div>
         </Form>
       </div>
     </div>

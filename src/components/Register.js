@@ -6,6 +6,7 @@ import { Form, Input, Row, Col } from "antd";
 /*import locale from "antd/es/date-picker/locale/es_ES";
 import { DatePicker } from "antd/es";*/
 /*import { Image } from "antd";*/
+import {useHistory } from "react-router-dom";
 import "../styles/register.css";
 
 import { GreenButton } from "./GreenButton";
@@ -19,7 +20,10 @@ function Register() {
   const formFailed = (error) => {
     console.log("Error: ", error);
   };
-
+  const history = useHistory();
+  const handleProfile =  () => {
+    history.push("/perfil");
+  };
   return (
     <div>
 
@@ -125,7 +129,7 @@ function Register() {
               <Item>
                 <GreenButton
                   button_name="Registrar"
-                  button_func={GreenButton.css}
+                  button_func={handleProfile}
                 />
               </Item>
             </Form>
