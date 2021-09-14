@@ -1,32 +1,60 @@
-import sportFieldLogo from '../images/sportFieldLogo.jpg';
+//import sportFieldLogo from '../images/sportFieldLogo.jpg';
 import '../styles/App.css';
 import React from "react"
-import { Layout } from 'antd';
-import MainMenu from "./MainMenu";
+//import { Layout } from 'antd';
+//import MainMenu from "./MainMenu";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import AboutFigma from "./AboutFigma";
 import Log from "./Log";
 import Register from "./Register";
 import HomePage from "./HomePage";
-import {ProfilePage} from "../pages/ProfilePage";
-import {TurnsPage} from "../pages/TurnsPage";
+import { ProfilePage } from "../pages/ProfilePage";
+import { TurnsPage } from "../pages/TurnsPage";
 
 
-const { Header, Footer, Content } = Layout;
+// const { Header, Footer, Content } = Layout;
 
 function App() {
-  return (
-      <Router>
-      <Layout>
-        <Header className="main-header">
-            <div>
-                <img src={sportFieldLogo} alt="SportField"/>
-            </div>
+    return (
+        //   <Router>
+        //   <Layout>
+        //     <Header className="main-header">
+        //         <div>
+        //             <img src={sportFieldLogo} alt="SportField"/>
+        //         </div>
 
-      <MainMenu />
-        </Header>
-        <Content className="main-content">
+        //   <MainMenu />
+        //     </Header>
+        //     <Content className="main-content">
+        //         <Switch>
+        //             <Route path="/acerca-de">
+        //                 <AboutFigma />
+        //             </Route>
+        //             <Route path="/inicio-sesion">
+        //                 <Log />
+        //             </Route>
+        //             <Route path="/registrarse">
+        //                 <Register />
+        //             </Route>
+        //             <Route path="/perfil">
+        //                 <ProfilePage />
+        //             </Route>
+        //             <Route path="/agendar-canchas">
+        //                 <TurnsPage />
+        //             </Route>
+
+        //             <Route path="/">
+        //                 <HomePage />
+        //             </Route>
+        //         </Switch>
+
+
+        //     </Content>
+        //     <Footer className="footer">Footer</Footer>
+        //   </Layout>
+        //   </Router>
+        <Router>
             <Switch>
                 <Route path="/acerca-de">
                     <AboutFigma />
@@ -43,18 +71,12 @@ function App() {
                 <Route path="/agendar-canchas">
                     <TurnsPage />
                 </Route>
-
                 <Route path="/">
                     <HomePage />
                 </Route>
             </Switch>
-
-
-        </Content>
-        <Footer className="footer">Footer</Footer>
-      </Layout>
-      </Router>
-  );
+        </Router>
+    );
 }
 
 export default App;
