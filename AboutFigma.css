@@ -1,0 +1,31 @@
+body {
+    background-image: url("../images/fondoAF.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.heder{
+    height:110px;
+    background-color: #2f2e2e;
+display: flex;
+justify-content:space-between;
+align-items: center;
+padding-left:80px;
+padding-right:80px;
+box-shadow:0 15px 5px rgba(0,0,0,0.5);
+position: relative;
+z-index:500;
+}
+
+
+
+
+
+
+
+
+.containercard{
+    font-weight: 700;
+    color: white;
+}
