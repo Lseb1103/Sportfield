@@ -35,6 +35,7 @@ function App() {
                 <Route path="/registrarse">
                     <Register />
                 </Route>
+
                 <Route path="/">
                     <HomePage />
                 </Route>

@@ -1,15 +1,21 @@
 import React from 'react';
 import cancha2 from '../images/cancha2.PNG';
 import futbol2 from '../images/futbol2.PNG';
-import {Card, Col, Row} from 'antd';
+import {Button, Card, Col, Row} from 'antd';
 import '../styles/services.css';
 import {GreenButton} from "./GreenButton";
+
 
 const { Meta } = Card;
 
 const Services = () => {
+    const handleLogout = async () => {
+
+        history.push("/registrarse");
+    };
     return (
         <>
+
             <Row >
                 <Col  span={12}>
                     <Card
@@ -19,7 +25,9 @@ const Services = () => {
 
                         title="Alquiler de Canchas Deportivas" description="Reserva tu cancha en la fecha y hora que deseas" />
                         <div className="btnServices">
-                            <GreenButton  button_name="Agendar turno" button_func={GreenButton}></GreenButton>
+                            {/*<GreenButton type="link" href={`/registrarse`} button_name="Agendar turno" button_func={GreenButton}></GreenButton>*/}
+                            <Button type="link" href={`/registrarse`}>Primary Button</Button>
+                            <GreenButton onClick={handleLogout} button_name="Inscribirse" button_func={GreenButton}></GreenButton>
                         </div>
 
                 </Card></Col>
@@ -29,7 +37,10 @@ const Services = () => {
                     >
                         <Meta title="Inscripción en Cursos Deportivos" description="Aprende nuevas habilidades deportivas con los cursos ofertados" />
                         <div className="btnServices">
-                            <GreenButton  button_name="Inscribirse" button_func={GreenButton}></GreenButton>
+
+                                <GreenButton  button_name="Inscribirse" button_func={GreenButton}></GreenButton>
+
+
                         </div>
 
                     </Card>
