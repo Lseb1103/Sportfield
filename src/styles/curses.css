@@ -10,14 +10,14 @@
 .curses img{
     width: 250px;
     height: 200px;
-    margin: 0px;
+    margin: 0;
 }
 .rigth h1{
     color: #ffffff;
 }
 .curses .ant-row{
-    margin-left: 0px;
-    margin-top: 0px;
+    margin-left: 0;
+    margin-top: 0;
 }
 .curses .ant-card-bordered {
     border-radius: 25px;

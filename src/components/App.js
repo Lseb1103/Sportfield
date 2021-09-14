@@ -4,9 +4,11 @@ import React from "react"
 import { Layout } from 'antd';
 import MainMenu from "./MainMenu";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Services from "./Services";
-import Course from "./Course";
-import Carouselinfo from "./Carouselinfo";
+
+import AboutFigma from "./AboutFigma";
+import Log from "./Log";
+import Register from "./Register";
+import HomePage from "./HomePage";
 
 
 const { Header, Footer, Content } = Layout;
@@ -19,36 +21,26 @@ function App() {
             <div>
                 <img src={sportFieldLogo} alt="SportField"/>
             </div>
+
       <MainMenu />
         </Header>
         <Content className="main-content">
-            <div className="imagesInfo">
-
-                <Carouselinfo />
-            </div>
-<div className="services">
-    <h2>SERVICIOS</h2>
-<Services />
-    <div className="curses">
-        <h2>CURSOS DISPONIBLES</h2>
-        <Course />
-    </div>
-
-</div>
             <Switch>
-                 <Route path="/acerca-de">
-
+                <Route path="/acerca-de">
+                    <AboutFigma />
                 </Route>
-                <Route path="/tareas">
-
+                <Route path="/inicio-sesion">
+                    <Log />
                 </Route>
-                <Route path="/netflix">
-
+                <Route path="/registrarse">
+                    <Register />
                 </Route>
                 <Route path="/">
-
+                    <HomePage />
                 </Route>
             </Switch>
+
+
         </Content>
         <Footer className="footer">Footer</Footer>
       </Layout>

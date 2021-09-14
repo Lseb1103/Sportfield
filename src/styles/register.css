@@ -1,0 +1,49 @@
+
+body {
+    background-color: #4D59BB;
+}
+.Container1 .title h1{
+
+    font-weight: bold;
+    color: white;
+    padding-left: 500px;
+    margin-top: 0px;
+    font-size: 2.8em;
+    width: 1000px;
+}
+Form Item .item1{
+    color: white;
+}
+
+.Container1{
+
+    margin-top: 200px;
+    margin-left: 50px;
+    font-weight: 700;
+    color: white;
+}
+/*Image{
+    background:url(../images/logo.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+.aceptar{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform : translate(-50%,-50%);
+    padding: 15px 30px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color: #4dbb78;
+    box-shadow: 0 8px 0 rgba(0, 0, 0, 0.6);
+}
+.Container1 .ant-row {
+    margin-left: 0px;
+
+}

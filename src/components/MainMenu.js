@@ -1,9 +1,14 @@
 import React from 'react';
-import { Menu} from 'antd';
-import { Link } from "react-router-dom";
+import { Menu, Button} from 'antd';
+import {Link, useHistory} from "react-router-dom";
 
 
 const MainMenu = () => {
+    const history = useHistory();
+    const handleLogout =  () => {
+        history.push("/");
+
+    };
     return (
         <Menu
             theme="dark"
@@ -12,13 +17,16 @@ const MainMenu = () => {
             className="main-menu"
         >
             <Menu.Item>
-                <Link to="/">Iniciar Sesion</Link>
+                <Link to="/inicio-sesion">Iniciar Sesion</Link>
             </Menu.Item>
             <Menu.Item>
-                <Link to="/netflix">Registrarse</Link>
+                <Link to="/registrarse">Registrarse</Link>
             </Menu.Item>
             <Menu.Item>
                 <Link to="/acerca-de">Acerca de</Link>
+            </Menu.Item>
+            <Menu.Item>
+                <Button onClick={handleLogout}>Regresar</Button>
             </Menu.Item>
         </Menu>
     );
