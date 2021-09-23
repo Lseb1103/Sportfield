@@ -1,0 +1,15 @@
+.ant-layout-footer{
+    background-color: #4DBB78;
+    color: white;
+}
+h1{
+    color: floralwhite;
+    font-size: 16px;
+}
+p{
+    font-size: 14px;
+}
+.ant-layout, .ant-layout * {
+    box-sizing: border-box;
+    color: white;
+}

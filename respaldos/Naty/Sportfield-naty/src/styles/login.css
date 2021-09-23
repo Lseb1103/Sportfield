@@ -1,0 +1,25 @@
+body{
+    background-color: #4D59BB;
+    height: 500px;
+}
+h1{
+
+    font-weight: 700;
+    color: white;
+}
+.log {
+
+
+
+
+
+}
+.MainContainer{
+
+height: 500px;
+    padding: 40px 40px 10px 40px;
+
+}
+.SecondaryContainer{
+    text-align: center;
+}
