@@ -1,0 +1,37 @@
+body{
+    background-color: #4D59BB;
+}
+.containerMenu1{
+    position: relative;
+    margin-top: 80px;
+    background: #3A438B;
+    font-size: 30px;
+}
+.ant-menu-item .ant-menu-item-icon, .ant-menu-submenu-title .ant-menu-item-icon, .ant-menu-item .anticon, .ant-menu-submenu-title .anticon{
+    font-size: 30px;
+}
+.ant-menu-vertical > .ant-menu-item, .ant-menu-vertical-left > .ant-menu-item, .ant-menu-vertical-right > .ant-menu-item, .ant-menu-inline > .ant-menu-item, .ant-menu-vertical > .ant-menu-submenu > .ant-menu-submenu-title, .ant-menu-vertical-left > .ant-menu-submenu > .ant-menu-submenu-title, .ant-menu-vertical-right > .ant-menu-submenu > .ant-menu-submenu-title, .ant-menu-inline > .ant-menu-submenu > .ant-menu-submenu-title{
+    height: 72px;
+    line-height: 40px;
+}
+
+.ant-table table {
+    color: black;
+    font-size: 30px;
+    background-color: #4D59BB!important;
+    margin: 2px;
+
+}
+.ant-table-thead > tr > th {
+    color: white;
+}
+
+/*.ant-table-container table > thead > tr:first-child th:first-child {
+    background: green!important;
+}
+*/
+.ant-table-thead > tr > th{
+    background: #3a438b!important;
+
+}
+
