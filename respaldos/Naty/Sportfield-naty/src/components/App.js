@@ -15,6 +15,8 @@ import {Layout} from "antd";
 import MainFooter from "./MainFooter";
 import TurnsAdmin from "./TurnsAdmin";
 import Comments from "./Comments";
+import AdminUser from "./AdminUser";
+import CoursesOffered from "./CoursesOffered";
 
 
 const {  Footer, Content } = Layout;
@@ -85,6 +87,12 @@ function App() {
                         </Route>
                         <Route path="/comentarios">
                             <Comments />
+                        </Route>
+                        <Route path="/prueba">
+                            <AdminUser />
+                        </Route>
+                        <Route path="/cursos">
+                            <CoursesOffered />
                         </Route>
                         <Route path="/">
                             <HomePage />

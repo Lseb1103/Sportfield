@@ -44,4 +44,27 @@ z-index:500;
 .containercard{
     font-weight: 700;
     color: white;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.containercard .ant-card-bordered {
+    border-radius: 25px;
+    width: 350px;
+    height: 300px;
+    background-color: #4D59BB;
+    color: #ffffff;
+    border-color: #4D59BB;
+}
+.containercard h1{
+    font-size: 2em;
+    font-weight: bold;
+}
+.containercard p{
+    font-size: 1.3em;
+
+}
+.containercard .ant-row {
+    margin-left: 150px;
+    margin-top: 50px;
+    margin-bottom: 0px;
 }

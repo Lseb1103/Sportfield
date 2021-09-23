@@ -27,6 +27,9 @@ const MainMenu = () => {
             <Menu.Item>
                 <Link to="/comentarios">Comentarios</Link>
             </Menu.Item>
+            <Menu.Item>
+                <Link to="/prueba">prueba</Link>
+            </Menu.Item>
 
         </Menu>
     );

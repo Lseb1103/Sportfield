@@ -25,38 +25,31 @@ function AboutPage() {
       <div className="containercard">
         <Row gutter={16}>
           <Col span={8}>
-            <Card className="objetivoCard"
-              style={{ background: "#4D59BB" }}
-              title="Objetivo"
-
-            >
-             Insentivar el deporte y la actividad fisica en la comunidad con nuestro sistema de agendamiento de canchas deportivas e inscripcion en nuestroa cursos dirigido para el publico en general.
+            <Card>
+              <h1>Objetivo</h1>
+             <p>Insentivar el deporte y la actividad fisica en la comunidad con nuestro sistema de agendamiento de canchas deportivas e inscripcion en nuestroa cursos dirigido para el publico en general.</p>
             </Card>
           </Col>
         </Row>
 
         <Row gutter={16}>
+          <div className="containerMision">
           <Col span={8}>
-            <Card
-              style={{ background: "#4D59BB" }}
-              title="Misión"
-              bordered={false}
-            >
-              Promover el deporte como herramienta para la educación en valores
-              y la salud.
+            <Card>
+              <h1>Misión</h1>
+              <p>Promover el deporte como herramienta para la educación en valores
+              y la salud.</p>
             </Card>
           </Col>
+          </div>
         </Row>
         <Row gutter={16}>
           <Col span={8}>
-            <Card
-              style={{ background: "#4D59BB" }}
-              title="Visión"
-              bordered={false}
-            >
-              Ser el principal agente internacional promotor del deporte
+            <Card>
+              <h1>Visión</h1>
+              <p>Ser el principal agente internacional promotor del deporte
               inclusivo – educativo y de hábitos de vida saludable en el
-              conjunto.
+              conjunto.</p>
             </Card>
           </Col>
         </Row>

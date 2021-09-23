@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {Button} from "antd";
-import "../styles/AdminUser.css";
+import "../styles/TurnsAdmin.css";
 import {db} from "../firebase";
 /*
 const usuarios  = [
